@@ -1,4 +1,5 @@
 "use client";
+import TwitterCard from "@/components/ui/twitter-card";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,6 +24,17 @@ export default function Home() {
             .
           </li>
           <Link href='/other'>Go to Other Page</Link>
+          <TwitterCard
+            name="Elon Musk"
+            handle="elonmusk"
+            content="Just setting up my Twitter clone with Next.js and Tailwind CSS. This looks pretty good!"
+            timestamp="2:30 PM · May 18, 2025"
+            likes={42}
+            retweets={5}
+            replies={3}
+            profileImage="/placeholder.svg?height=48&width=48"
+            verified={true}
+           />
           <li className="tracking-[-.01em]">
             Save and see your changes instantly.
           </li>
