@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
             </code>
             .
           </li>
+          <Link href='/other'>Go to Other Page</Link>
           <li className="tracking-[-.01em]">
             Save and see your changes instantly.
           </li>
